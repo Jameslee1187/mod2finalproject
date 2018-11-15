@@ -1,0 +1,2 @@
+module PotluckFoodsHelper
+end

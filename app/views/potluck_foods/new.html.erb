@@ -1,0 +1,13 @@
+<%= form_for @potluck_food do |f|%>
+
+<%= f.label :food_category_id%>
+<%= f.collection_select :food_category_id, @food_categories, :id, :name %>
+
+<%= f.label :potluck_id%>
+<%= f.collection_select :potluck_id, @potlucks, :id, :description %>
+
+<%= f.label :user_id%>
+<%= f.collection_select :user_id, @users, :id, :name %>
+
+<%= f.submit %>
+<% end %>

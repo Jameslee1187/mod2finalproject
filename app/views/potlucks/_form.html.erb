@@ -1,0 +1,11 @@
+<%= form_for @potluck do |f| %>
+<%= f.label :description, "Describe you potluck!" %>
+<%= f.text_area :description %>
+<%= f.label :attendees, "How many people will you host?" %>
+<%= f.number_field :attendees %>
+<%= f.label :address %>
+<%= f.text_field :address %>
+<%= f.label :location_id, "City" %>
+<%= f.collection_select :location_id, @locations, :id, :city %>
+<%= f.submit %>
+<%end  %>

@@ -1,0 +1,8 @@
+
+<%@potlucks.each do |potluck| %>
+<ul>
+  <li><%= link_to potluck.description, potluck%>
+
+</ul>
+<% end %>
+<%= link_to "Create your own Potluck", new_potluck_path %>

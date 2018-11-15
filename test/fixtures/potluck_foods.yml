@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  food_category: one
+  potluck: one
+  rating: 1
+  review: MyString
+
+two:
+  user: two
+  food_category: two
+  potluck: two
+  rating: 1
+  review: MyString

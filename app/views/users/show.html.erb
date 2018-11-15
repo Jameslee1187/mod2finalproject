@@ -1,0 +1,7 @@
+<h1>Hi <%=@user.name%></h1>
+<h3>Please choose if you would like to host a potluck or attend one</h3>
+<li><%=link_to "Host a Potluck", new_potluck_path(@potluck)%></li>
+<li><%=link_to "Attend Potluck", "/potluck_foods/new"%></li>
+
+when we pick a potluck as a guest we want to register for the party, pick food to bring, see if we can fit the party.
+we can't delete or edit the party
