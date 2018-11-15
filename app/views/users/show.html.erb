@@ -2,7 +2,7 @@
   <h1>Hi <%=@user.name%></h1>
 <h3>Please choose if you would like to host a potluck or attend one</h3>
 <ul>
-<li class="host_or_attend"><%=link_to "Host a Potluck", new_potluck_path(@potluck)%></li>
-<li class="host_or_attend"><%=link_to "Attend Potluck", "/potluck_foods/new"%></li>
+<li class="host_or_attend"><%=link_to "Host", new_potluck_path(@potluck)%></li>
+<li class="host_or_attend"><%=link_to "Attend", "/potluck_foods/new"%></li>
 </ul>
 </div>

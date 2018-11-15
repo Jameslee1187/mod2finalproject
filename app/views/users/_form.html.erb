@@ -6,16 +6,15 @@
 
 <div class="user_form">
 <%=form_for @user do |f|  %>
-<%= f.label :name, "What is your name?" %>
+<%= f.label :name, "Name" %>
 <%= f.text_field :name %> </br>
-<%= f.label :age,  "How old are you?
-(Must be at least 21)"%>
+<%= f.label :age,  "Age"%>
 <%= f.number_field :age, min: 21 %> </br>
 <!-- <%= f.label :location, "Please enter your location: (Manhattan, Bronx, Brooklyn, Queens, Staten Island)" %>
 <%= f.text_field :location %> </br> -->
 <%= f.label :location, "City" %>
 <%= f.collection_select :location, @locations, :id, :city %></br>
-<%= f.label :occupation, "What is your occupation?" %>
+<%= f.label :occupation, "Occupation" %>
 <%= f.text_field :occupation %> </br>
 <%= f.submit %>
 <% end %>

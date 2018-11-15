@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to user_path(@user)
     else
-      redirect_to new_user_path, :flash => { :error => "Get it right stupid" }
+      redirect_to new_user_path, :flash => { :error => "Oops, something went wrong" }
     end
   end
 
