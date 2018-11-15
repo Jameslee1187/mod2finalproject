@@ -3,7 +3,7 @@ user2 = User.create(name: "Rufat Agayev", age: 31, location: "NYC", occupation: 
 user3 = User.create(name: "Omid Vatandoost", age: 24, location: "Brooklyn", occupation: "student")
 user4 = User.create(name: "Kevy Wevy", age: 99, location: "Brooklyn", occupation: "teacher")
 
-potluck1 = Potluck.create(attendees: 30, address: "81 Prospect St, Brooklyn, NY 11201", description: "my party", location_id: 1, date: )
+potluck1 = Potluck.create(attendees: 30, address: "81 Prospect St, Brooklyn, NY 11201", description: "my party", location_id: 1 )
 potluck2 = Potluck.create(attendees: 25, address: "18 W 18th St, New York, NY 10011", description: "great party", location_id: 2)
 potluck3 = Potluck.create(attendees: 20, address: "123 My House Street, Queens, NY, 12345", description: "best party", location_id: 5)
 

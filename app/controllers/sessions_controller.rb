@@ -1,7 +1,7 @@
 class SessionsController < ApplicationController
   def new
   end
-  
+
   def create
   @user = User.find_by(username: params[:username])
   if @user && @user.authenticate(params[:password])
@@ -15,7 +15,7 @@ end
 
 def destroy
   log_out
-  redirect_to colors_path
+  redirect_to potlucks_path
 end
 
 end

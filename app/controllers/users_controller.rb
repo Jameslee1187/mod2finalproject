@@ -22,9 +22,16 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+ def authenticate(password)
+   BCrypt::Password.new(@user.password_digest) == password
+ end
+
+
+
   private
 
   def user_params
     params.require(:user).permit(:name, :age, :location, :occupation)
   end
+
 end

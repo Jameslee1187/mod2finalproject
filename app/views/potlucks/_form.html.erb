@@ -1,11 +1,13 @@
+<div class="form_for_pod">
 <%= form_for @potluck do |f| %>
 <%= f.label :description, "Describe you potluck!" %>
-<%= f.text_area :description %>
+<span class="parts_of_form"><%= f.text_area :description %></span> </br>
 <%= f.label :attendees, "How many people will you host?" %>
-<%= f.number_field :attendees %>
+<span class="parts_of_form"><%= f.number_field :attendees, min: 1, max: 99 %></span> </br>
 <%= f.label :address %>
-<%= f.text_field :address %>
+<span class="parts_of_form"><%= f.text_field :address %></span> </br>
 <%= f.label :location_id, "City" %>
-<%= f.collection_select :location_id, @locations, :id, :city %>
+<span class="parts_of_form"><%= f.collection_select :location_id, @locations, :id, :city %></span> </br>
 <%= f.submit %>
 <%end  %>
+</div>

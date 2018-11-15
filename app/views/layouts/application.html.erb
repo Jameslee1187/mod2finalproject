@@ -4,12 +4,18 @@
     <title>Luckypot</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=KoHo" rel="stylesheet">
   </head>
 
   <body>
+    <nav class="nav-bar">
+      <a href="/users/new">Sign Up</a> |
+      <a class="log_out" href="//">Log Out</a> |
+      <a href="/potlucks">Home</a> |
+    </nav>
+
+
     <%= yield %>
   </body>
 </html>

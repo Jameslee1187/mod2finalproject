@@ -1,8 +1,13 @@
-<hi>Here are the details on your Potluck</hi>
-<%= @potluck.description %>
-<%= @potluck.attendees %>
-<%= @potluck.address %>
+
+<div class="details">
+  <hi>Here are the details on your Potluck</hi>
+<p class="detail_font"><%= @potluck.description %> </br>
+<%= @potluck.attendees %> people </br>
+Address: <%= @potluck.address %>
 <%= @potluck.location.city %>
+</p>
 <%= link_to "edit", edit_potluck_path(@potluck) %>
-<%= link_to "delete", potluck_path(@potluck), method: :delete %>
+<%= link_to "delete", potlucks_path,  method: :delete %>
+
 <%= link_to "attend", new_potluck_food_path %>
+</div>

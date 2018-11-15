@@ -11,7 +11,6 @@ class PotlucksController < ApplicationController
   def new
     @potluck = Potluck.new
     @locations = Location.all
-
   end
 
   def create
@@ -24,6 +23,7 @@ class PotlucksController < ApplicationController
   end
 
   def edit
+
     @potluck = Potluck.find(params[:id])
     @locations = Location.all
 

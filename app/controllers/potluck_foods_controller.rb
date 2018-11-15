@@ -27,7 +27,11 @@ class PotluckFoodsController < ApplicationController
   end
   end
 
-
+  def destroy
+    @potluck_food = PotluckFood.find(params[:id])
+    @potluck_food.destroy
+    redirect_to potlucks_path
+  end
 
 
 

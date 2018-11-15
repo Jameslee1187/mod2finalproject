@@ -13,3 +13,125 @@
  *= require_tree .
  *= require_self
  */
+* {
+  font-family: 'KoHo', sans-serif;
+}
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 40px;
+  border-radius: 5px;
+  position: fixed;
+  padding-top: 12px;
+  }
+body {
+ background: url(https://princetonlibrary.org/wp-content/uploads/2018/07/potluck.png) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+.potlucks_index {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: relative;
+  top: 200px;
+  width: 40%;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  height: max-content;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  margin-top: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+.link_to_potluck, .host_or_attend {
+display: inline;
+font-size: 30px;
+}
+
+.link_to_potluck:hover {
+    font-size: 50px;
+}
+.host_or_attend:hover {
+  font-size: 50px;
+}
+
+.form_for_pod {
+background-color: rgba(0, 0, 0, 0.5);
+margin: auto;
+position: relative;
+top: 200px;
+width: 40%;
+border-radius: 5px;
+text-align: center;
+color: white;
+height: max-content;
+padding: 10px;
+}
+
+.details {
+background-color: rgba(0, 0, 0, 0.5);
+margin: auto;
+position: relative;
+top: 200px;
+width: 40%;
+border-radius: 5px;
+text-align: center;
+color: white;
+height: max-content;
+padding: 10px;
+}
+
+.detail_font {
+  font-size: 30px;
+}
+
+textarea, input {
+  border-radius: 5px;
+}
+
+.p_f_form, .see_you{
+background-color: rgba(0, 0, 0, 0.5);
+margin: auto;
+position: relative;
+top: 200px;
+width: 40%;
+border-radius: 5px;
+text-align: center;
+color: white;
+height: max-content;
+padding: 10px;
+}
+
+.user_form {
+  margin: auto;
+      /* position: relative; */
+      top: 200px;
+      /* width: 40%; */
+      border-radius: 5px;
+      text-align: center;
+      color: white;
+      height: max-content;
+      padding: 10px;
+}
+
+.new_user {
+  background-color: rgba(0, 0, 0, 0.5);
+margin: auto;
+position: relative;
+top: 200px;
+/* width: 40%; */
+border-radius: 5px;
+text-align: center;
+color: white;
+height: max-content;
+padding: 10px;
+}
